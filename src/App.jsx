@@ -18,12 +18,12 @@ function App() {
         <Header />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/bitnboard" element={<Home />} />
+            <Route path="/bitnboard/about" element={<About />} />
             {/* <Route path="/gallery" element={<Gallery />} /> */}
-            <Route path="/blogs/:id" element={<Blog />} />
-            <Route path="/contact-us" element={<GetInTouch />} />
-            <Route path="/swags" element={<Swags />} />
+            <Route path="/bitnboard/blogs/:id" element={<Blog />} />
+            <Route path="/bitnboard/contact-us" element={<GetInTouch />} />
+            <Route path="/bitnboard/swags" element={<Swags />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

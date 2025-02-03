@@ -11,7 +11,7 @@ const Blogs = () => {
       {/* Grid layout for proper spacing */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-6">
         {blogList.map((blog) => (
-          <Link to={`/blogs/${blog.id}`}>
+          <Link to={`/bitnboard/blogs/${blog.id}`}>
           <div
             key={blog.id}
             className="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg w-full h-[30rem] overflow-hidden"
