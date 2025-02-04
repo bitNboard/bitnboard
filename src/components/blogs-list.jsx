@@ -116,7 +116,7 @@ const blogList = [
     </section>
       `,
     date: "February 3, 2025",
-    imageUrl: "https://voidzero.dev/covers/pledge.jpg",
+    imageUrl: "https://img.freepik.com/free-photo/woman-s-hand-presenting-futuristic-technology-digital-remix_53876-104222.jpg?ga=GA1.1.2064688740.1737635075&semt=ais_hybrid_sidr",
     headings: [
       { id: "introduction", title: "Introduction" },
       { id: "methods-used", title: "Methods Used" },
