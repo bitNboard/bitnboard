@@ -4,14 +4,14 @@ const blogList = [
     title: "How does an eclipse attack work?",
     description: "An eclipse attack is a cyberthreat where an attacker isolates a victim node by taking control of its network communication. This attack allows the attacker to manipulate the victim’s traffic, potentially leading to further malicious activities. The blog explores strategies to prevent such attacks, including peer discovery, Sybil attack resistance, randomized node selection, and secure communication protocols.",
     template: `
-      <h2 id="introduction" class="text-3xl font-Inter font-semibold my-4 mt-16">Introduction</h2>
+      <h2 id={headings[0].id} class="text-3xl font-Inter font-semibold my-4 mt-16">Introduction</h2>
       <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
         An eclipse attack is a type of cyberattack in which the attacker seizes control of the communication 
         channels between a victim node and its surrounding nodes. By positioning themselves between the victim 
         and the rest of the network, the attacker effectively "eclipses" the victim...
       </p>
 
-      <h2 id="methods-used" class="text-3xl font-Inter font-semibold my-4">Methods Used</h2>
+      <h2 id={headings[1].id} class="text-3xl font-Inter font-semibold my-4">Methods Used</h2>
       <ul class="list-disc pl-6 text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter marker:text-black">
         <li>Peer Discovery</li>
         <li>Sybil Attack Resistance</li>
@@ -22,7 +22,7 @@ const blogList = [
 
       <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
 
-      <h2 id="peer-discovery" class="text-3xl font-Inter font-semibold my-4">Peer Discovery</h2>
+      <h2 id={headings[2].id} class="text-3xl font-Inter font-semibold my-4">Peer Discovery</h2>
       <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
         The peer discovery strategy aims to mitigate eclipse attacks by
         implementing decentralized mechanisms that allow nodes to discover
@@ -36,7 +36,7 @@ const blogList = [
 
       <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
 
-      <h2 id="sybil-resistance" class="text-3xl font-Inter font-semibold my-4">
+      <h2 id={headings[3].id} class="text-3xl font-Inter font-semibold my-4">
         Sybil Attack Resistance
       </h2>
       <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
@@ -51,7 +51,7 @@ const blogList = [
 
       <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
 
-      <h2 id="randomized-selection" class="text-3xl font-Inter font-semibold my-4">
+      <h2 id={headings[4].id} class="text-3xl font-Inter font-semibold my-4">
         Randomized Node Selection
       </h2>
       <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
@@ -67,7 +67,7 @@ const blogList = [
 
       <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
 
-      <h2 id="network-monitoring" class="text-3xl font-Inter font-semibold my-4">
+      <h2 id={headings[5].id} class="text-3xl font-Inter font-semibold my-4">
         Network Monitoring
       </h2>
       <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
@@ -81,7 +81,7 @@ const blogList = [
       </p>
       <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
 
-      <h2 id="secure-protocols" class="text-3xl font-Inter font-semibold my-4">
+      <h2 id={headings[6].id} class="text-3xl font-Inter font-semibold my-4">
         Secure Communication Protocols
       </h2>
       <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
@@ -96,7 +96,7 @@ const blogList = [
     <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
 
     <section>
-      <h2 id="conclusion" class="text-3xl font-Inter font-semibold my-4">
+      <h2 id={headings[7].id} class="text-3xl font-Inter font-semibold my-4">
         Conclusion
       </h2>
       <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-16 font-Inter">
