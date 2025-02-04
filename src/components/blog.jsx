@@ -19,7 +19,7 @@ const Blog = () => {
           </div>
         </div>
         <Link
-          to="/bitnboard"
+          to="/"
           className="px-4 py-2 mt-10 bg-gray-800 text-white hover:bg-gray-700 transition"
         >
           Return Home
@@ -68,7 +68,7 @@ const Blog = () => {
           <div className="w-full flex justify-between items-center my-8 pt-6">
             {/* Back to Blog Button */}
             <Link
-              to="/bitnboard"
+              to="/"
               className="px-6 py-3 border text-gray-800 hover:bg-gray-100 transition-all"
             >
               Back to Home
