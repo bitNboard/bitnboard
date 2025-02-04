@@ -48,12 +48,12 @@ const Blog = () => {
           {/* Author Section */}
           <div className="flex items-center mt-6">
             <img
-              src="https://avatars.githubusercontent.com/u/38765776?v=4"
+              src = {blog.avatar}
               alt="Author"
               className="h-10 w-10 rounded-full mr-5"
             />
             <p className="text-gray-800 text-[15px] font-semibold">
-              Chirag Garg
+              {blog.author}
             </p>
           </div>
         </div>
