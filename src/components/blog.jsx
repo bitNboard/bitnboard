@@ -33,7 +33,7 @@ const Blog = () => {
       <div className="text-[3.5rem] w-full flex justify-center text-center mt-7">
         <div className="flex flex-col items-center py-10">
           {/* Image Section */}
-          <div className="w-[50rem] flex justify-center">
+          <div className="w-[50rem] flex justify-center px-12">
             <img
               src={blog.imageUrl}
               alt="Blog Header"
@@ -43,7 +43,7 @@ const Blog = () => {
 
           <p className="text-gray-500 text-sm font-secondary">{blog.date}</p>
 
-          <h1 className="text-5xl font-bold mt-6 text-center">{blog.title}</h1>
+          <h1 className="text-5xl font-bold mt-6 text-center leading-16 w-3/4">{blog.title}</h1>
 
           {/* Author Section */}
           <div className="flex items-center mt-6">

@@ -9,7 +9,7 @@ const Blogs = () => {
         Want to dive in deeper into a specific category? Click on a topic below.
       </p>
       {/* Grid layout for proper spacing */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-16 mt-6">
         {blogList.map((blog) => (
           <Link to={`/bitnboard/blogs/${blog.id}`}>
           <div
@@ -27,7 +27,7 @@ const Blogs = () => {
 
             {/* Card content */}
             <div className="p-4 flex flex-col justify-between flex-1">
-              <h6 className="mb-2 text-slate-800 text-xl font-semibold">
+              <h6 className="mb-2 text-slate-800 text-xl font-semibold overflow-hidden text-ellipsis line-clamp-1">
                 {blog.title}
               </h6>
 
