@@ -65,33 +65,34 @@ const Home = () => {
   }, [currentText, isDeleting, currentPhraseIndex]);
 
   return (
-    <div className="h-full flex flex-col items-center bg-white bg-grid">
-      <div className="font-primary text-[3.5rem] w-full flex justify-center text-center mt-7">
-        <div className="w-4/5">
-          <div className="font-bold">The Evolution Starts here:</div>
-          &nbsp;
-          <span className="inline-flex items-center font-semibold">
-            <span>[</span>
-            <span
-              className={`ml-[0.3rem] inline-block w-[30rem] text-left overflow-hidden font-secondary ${
-                isTyping ? "typing" : ""
-              }`}
-            >
-              {displayText}
-            </span>
-            <span>]</span>
+    <div className="h-full min-h-screen flex flex-col items-center bg-white bg-grid px-4 sm:px-10">
+    <div className="font-primary w-full flex justify-center text-center mt-7">
+      <div className="w-full sm:w-4/5">
+        <div className="font-bold text-[2rem] sm:text-[2.5rem] lg:text-[3.5rem] leading-snug">
+          The Evolution Starts here:
+        </div>
+        &nbsp;
+        <span className="inline-flex items-center font-semibold">
+          <span className="text-[2rem] sm:text-[2.5rem] lg:text-[3.5rem]">[</span>
+          <span
+            className={`ml-[0.3rem] text-[2rem] sm:text-[2.5rem] lg:text-[3.5rem] inline-block sm:w-[20rem] md:w-[25rem] lg:w-[30rem] text-left overflow-hidden font-secondary ${
+              isTyping ? "typing" : ""
+            }`}
+          >
+            {displayText}
           </span>
-          <div className="flex justify-center">
-            <p className="text-base w-2/5 font-medium">
-              We strive to empower developers and innovators with the knowledge
-              to build smarter robots, decentralized networks, and AI-driven
-              systems.
-            </p>
-          </div>
+          <span className="text-[2rem] sm:text-[2.5rem] lg:text-[3.5rem]">]</span>
+        </span>
+        <div className="flex justify-center mt-4">
+          <p className="text-sm sm:text-base w-full sm:w-4/5 lg:w-3/5 font-medium">
+            We strive to empower developers and innovators with the knowledge to build smarter robots, decentralized networks, and AI-driven systems.
+          </p>
         </div>
       </div>
-      <Blogs />
     </div>
+    <Blogs />
+  </div>
+  
   );
 };
 

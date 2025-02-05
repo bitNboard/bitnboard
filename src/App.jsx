@@ -14,16 +14,16 @@ import Swags from './components/swags';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col h-full min-h-screen">
         <Header />
         <main className="flex-grow">
           <Routes>
-            <Route path="/bitnboard" element={<Home />} />
-            <Route path="/bitnboard/about" element={<About />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             {/* <Route path="/gallery" element={<Gallery />} /> */}
-            <Route path="/bitnboard/blogs/:id" element={<Blog />} />
-            <Route path="/bitnboard/contact-us" element={<GetInTouch />} />
-            <Route path="/bitnboard/swags" element={<Swags />} />
+            <Route path="/blogs/:id" element={<Blog />} />
+            <Route path="/contact-us" element={<GetInTouch />} />
+            <Route path="/swags" element={<Swags />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

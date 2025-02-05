@@ -9,17 +9,17 @@ const Blog = () => {
   // If no blog is found, display a fallback message
   if (!blog) {
     return (
-      <div className="h-full min-h-screen flex flex-col items-center bg-white bg-grid font-primary">
-        <div className="text-[3.5rem] mt-12 w-full flex justify-center text-center">
-          <div className="w-4/5 text-center">
+      <div className="h-full min-h-screen flex flex-col items-center bg-white bg-grid font-primary p-4">
+        <div className="text-2xl sm:text-[3.5rem] mt-12 w-full text-center">
+          <div className="w-full sm:w-4/5">
             <div className="font-bold">Error 404 | Blog not found</div>
-            <p className="text-4xl mt-4 font-medium">
+            <p className="text-xl sm:text-4xl mt-4 font-medium">
               Should have caught this, whoops 🤷
             </p>
           </div>
         </div>
         <Link
-          to="/bitnboard"
+          to="/"
           className="px-4 py-2 mt-10 bg-gray-800 text-white hover:bg-gray-700 transition"
         >
           Return Home
@@ -29,47 +29,49 @@ const Blog = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-white bg-grid font-primary">
-      <div className="text-[3.5rem] w-full flex justify-center text-center mt-7">
+    <div className="min-h-screen flex flex-col items-center bg-white bg-grid font-primary p-4">
+      <div className="text-2xl sm:text-[3.5rem] w-full text-center mt-7">
         <div className="flex flex-col items-center py-10">
           {/* Image Section */}
-          <div className="w-[50rem] flex justify-center px-12">
+          <div className="w-full sm:w-[45rem] flex justify-center px-2 sm:px-12">
             <img
               src={blog.imageUrl}
               alt="Blog Header"
-              className="w-full h-4/5 rounded-lg"
+              className="w-full h-auto rounded-lg"
             />
           </div>
 
-          <p className="text-gray-500 text-sm font-secondary">{blog.date}</p>
+          <p className="text-gray-500 text-sm font-secondary mt-4">{blog.date}</p>
 
-          <h1 className="text-5xl font-bold mt-6 text-center leading-16 w-3/4">{blog.title}</h1>
+          <h1 className="text-2xl sm:text-5xl font-bold mt-4 sm:mt-6 text-center leading-relaxed sm:leading-16 w-full sm:w-3/4">
+            {blog.title}
+          </h1>
 
           {/* Author Section */}
-          <div className="flex items-center mt-6">
+          <div className="flex items-center mt-4 sm:mt-6">
             <img
-              src = {blog.avatar}
+              src={blog.avatar}
               alt="Author"
-              className="h-10 w-10 rounded-full mr-5"
+              className="h-10 w-10 rounded-full mr-3 sm:mr-5"
             />
-            <p className="text-gray-800 text-[15px] font-semibold">
+            <p className="text-gray-800 text-sm sm:text-[15px] font-semibold">
               {blog.author}
             </p>
           </div>
         </div>
       </div>
 
-      <div className="bg-white flex justify-between w-full">
-        <div className="w-[65%] mx-auto">
+      <div className="bg-white flex flex-col-reverse lg:flex-row w-full">
+        <div className="w-full lg:w-[65%] mx-auto px-2 sm:px-8">
           {/* Dynamically inject template */}
           <div dangerouslySetInnerHTML={{ __html: blog.template }} />
 
           <hr className="border border-t-[1px] border-[#e5e7eb] my-8" />
-          <div className="w-full flex justify-between items-center my-8 pt-6">
+          <div className="w-full flex flex-col sm:flex-row justify-between items-center my-8 pt-6 gap-4">
             {/* Back to Blog Button */}
             <Link
-              to="/bitnboard"
-              className="px-6 py-3 border text-gray-800 hover:bg-gray-100 transition-all"
+              to="/"
+              className="px-6 py-3 border text-gray-800 hover:bg-gray-100 transition-all w-full sm:w-auto text-center"
             >
               Back to Home
             </Link>
@@ -82,7 +84,7 @@ const Blog = () => {
                 const twitterUrl = `https://x.com/intent/tweet?text=${tweetText}`;
                 window.open(twitterUrl, "_blank");
               }}
-              className="px-6 py-3 border text-gray-800 hover:bg-gray-100 transition-all"
+              className="px-6 py-3 border text-gray-800 hover:bg-gray-100 transition-all w-full sm:w-auto text-center"
             >
               Share article
             </button>
@@ -90,9 +92,9 @@ const Blog = () => {
         </div>
 
         {/* Table of Contents */}
-        <div className="w-1/4 px-6 sticky top-16 h-[calc(100vh-4rem)] hidden lg:block mt-16">
+        <div className="w-full lg:w-1/4 px-2 sm:px-6 sticky top-16 h-[calc(100vh-4rem)] hidden lg:block mt-16">
           <div className="bg-gray-100 p-4 rounded-md shadow-sm overflow-auto">
-            <h3 className="text-2xl font-Inter font-semibold mb-4">
+            <h3 className="text-xl sm:text-2xl font-Inter font-semibold mb-4">
               Table of Contents
             </h3>
             <ul className="space-y-2">

@@ -8,7 +8,7 @@ const teamList = [
 
 const About = () => {
   return (
-    <div className="h-full min-h-screen flex flex-col items-center bg-white bg-grid font-primary">
+    <div className="h-full min-h-screen flex flex-col items-center bg-white bg-grid font-primary justify-between">
       <div className="text-[3.5rem] w-full flex justify-center text-center mt-7">
         <div className="w-4/5 text-center">
           <div className="font-bold">Team</div>
@@ -19,7 +19,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="w-3/5 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="w-3/5 mt-10 mb-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {teamList.map((member, index) => (
           <div
             key={index}
@@ -67,6 +67,30 @@ const About = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="p-8 bg-white flex justify-center w-full font-Inter">
+       <div className="w-4/5">
+       <h2 className="text-3xl font-semibold mb-4">Want to join us?</h2>
+        <p className="text-gray-600 mb-4">
+          We are currently not hiring for any particular roles, but are always
+          open to a conversation with exceptional talent.
+        </p>
+
+        <p className="font-medium mb-2">If you are:</p>
+        <ul className="list-disc pl-6 text-gray-700 space-y-2">
+          <li>Obsessed with experience</li>
+          <li>Passionate about Tech</li>
+          <li>A believer of our vision</li>
+        </ul>
+
+        <p className="mt-6 text-gray-600">
+          Drop us a line at{" "}
+          <span className="font-medium text-gray-800">
+          bitnboard[at]gmail[dot]com
+          </span>
+          .
+        </p>
+       </div>
       </div>
     </div>
   );

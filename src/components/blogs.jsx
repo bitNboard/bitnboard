@@ -3,7 +3,7 @@ import blogList from "./blogs-list";
 
 const Blogs = () => {
   return (
-    <div className="py-16 px-4 font-primary flex flex-col w-4/5 mt-12">
+    <div className="py-16 px-4 font-primary flex flex-col sm:w-full lg:w-4/5 mt-12">
       <h1 className="text-2xl font-bold w-1/4">All Blogs</h1>
       <p className="text-base mt-2">
         Want to dive in deeper into a specific category? Click on a topic below.
@@ -11,7 +11,7 @@ const Blogs = () => {
       {/* Grid layout for proper spacing */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-16 mt-6">
         {blogList.map((blog) => (
-          <Link to={`/bitnboard/blogs/${blog.id}`}>
+          <Link to={`/blogs/${blog.id}`}>
           <div
             key={blog.id}
             className="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg w-full h-[30rem] overflow-hidden"
