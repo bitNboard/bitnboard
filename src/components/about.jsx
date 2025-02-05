@@ -3,23 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { TbBrandX } from "react-icons/tb";
 
 const teamList = [
-  {
-    name: "Chirag Garg",
-    role: "Co-Founder",
-    subRole: "Blockchain Developer",
-    avatar: "https://avatars.githubusercontent.com/u/38765776?v=4",
-    twitterHandle: "@DeVil2O",
-    githubLink: "https://github.com/DeVil2O/",
-    twitterLink: "https://twitter.com/ChiragG60642348",
-  },
-  {
-    name: "Gaurav Tiwari",
-    role: "Co-Founder",
-    avatar: "https://avatars.githubusercontent.com/u/45980323?v=4",
-    twitterHandle: "@krsihndaas",
-    githubLink: "https://github.com/Gauravtwr",
-    twitterLink: "https://x.com/Gaurav_Tiwari07",
-  },
+  
 ];
 
 const About = () => {

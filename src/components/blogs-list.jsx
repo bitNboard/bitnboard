@@ -425,7 +425,7 @@ Distributed redundancy is used to ensure data availability even in the event of 
       </p>
     </section>
       `,
-    date: "February 3, 2025",
+    date: "February 4, 2025",
     imageUrl: "https://img.freepik.com/free-vector/contract-agreement-isometric-composition-with-human-hand-putting-electronic-signature-blue-background-3d-vector-illustration_1284-78848.jpg?ga=GA1.1.2064688740.1737635075&semt=ais_hybrid_sidr",
 
     headings: [
@@ -444,6 +444,221 @@ Distributed redundancy is used to ensure data availability even in the event of 
 
 
   },
+
+  {
+    id: 4,
+    author: "Gaurav Tiwari",
+    avatar : "https://avatars.githubusercontent.com/u/45980323?v=4",
+    title: "What is Zero-Knowledge proof?",
+    description: "A person, referred to as the prover, can show to any other party, referred to as the verifier, that they are aware of a fact without disclosing any facts approximately the fact itself a thanks to a cryptographic technique referred to as zero-knowledge proof.",
+    template: `
+      <h2 id="introduction" class="text-3xl font-Inter font-semibold my-4 mt-16">Introduction</h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        A person, referred to as the prover, can show to any other party, referred to as the verifier, that they are aware of a fact without disclosing any facts approximately the fact itself a thanks to a cryptographic technique referred to as zero-knowledge proof. It functions under the premise of persuading the verifier without providing any background information. This is accomplished through a series of interactive interactions in which the prover gives answers that show understanding of the relevant information. The verifier can verify the proof by making calculations and checks, but the knowledge obtained is solely related to the veracity of the fact. Zero-Knowledge proof is a valuable tool for authentication, identity verification, and safe transactions in diverse fields like cryptography, blockchain, and secure computation because it ensures privacy and security by forbidding the prover from disclosing any sensitive information.
+      </p>
+
+      <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+      <h2 id="zk-snarks" class="text-3xl font-Inter font-semibold my-4">Zero-Knowledge Succinct Non-Interactive Argument of Knowledge</h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARKs) is a cryptographic technique used in Zero-Knowledge proofs to validate computations without disclosing any intermediate knowledge. In the context of "What is Zero-Knowledge proof and how does it work?", zk-SNARKs play a significant role in preserving privacy and security. In a zk-SNARK, the prover attempts to persuade the verifier of the truth of a claim without revealing the underlying information or the process that was followed. A concise proof is produced by the prover from the assertion and its related computation. It is a condensed mathematical construct. Without having to engage with the prover, the verifier can successfully verify this proof.
+        A set of public parameters is generated at the start of the procedure in a trusted setup. After completing calculations on the private input data using the public parameters, the prover then creates a proof. Following submission to the verifier, the proof is examined for validity using the assertion being proved as well as the public parameters. Without learning anything about the secret input data or the computing procedures, the verifier is persuaded of the statement's veracity if the proof is valid.
+        Zk-SNARKs have been used in a number of blockchain applications, including Zcash, to support private transactions, maintain confidentiality, and promote network trust.
+
+      </p>
+
+      <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+      <h2 id="zksm-proofs" class="text-3xl font-Inter font-semibold my-4">
+        Zero-Knowledge Set Membership (ZKSM) Proofs
+      </h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        In the framework of Zero-Knowledge proofs and how they operate, cryptographic protocols called Zero-Knowledge Set Membership (ZKSM) Proofs enable a party to demonstrate membership in a set without disclosing the individual element. They provide a potent method for information verification while preserving privacy. When employing ZKSM proofs, the prover seeks to persuade the verifier that a particular element is a part of a set without divulging any details regarding the element in question. The protocol uses an interactive procedure in which messages are exchanged between the prover and verifier. The prover starts by building a proof using the set and the hidden element.
+        The purpose of this proof is to persuade the verifier that the element exists without really revealing it. The verifier then uses calculations and comparisons to ensure that the proof is valid by comparing it to publicly available data such as the set and the proof. Without learning anything about the element itself, the verifier develops trust that the prover is aware of a valid element through this method. ZKSM proofs have uses across several industries, including blockchain. ZKSM proofs can be used in blockchain systems to validate transactions or smart contract inputs without revealing private data, protecting privacy while assuring the blockchain network's integrity.
+
+      </p>
+
+
+      <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+      <h2 id="bulletproofs" class="text-3xl font-Inter font-semibold my-4">
+        Bulletproofs
+      </h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        Cryptographic methods that are classified as Zero-Knowledge proofs include bulletproofs. They enable one party, known as the prover, to convince another, known as the verifier, that a statement is true without disclosing any underlying information. Bulletproofs are created especially for effective range proofs in the context of Zero-Knowledge proofs. When utilising Bulletproofs, the prover is able to demonstrate that a secret value falls inside a given range without revealing the actual value. In a blockchain transaction, for instance, the prover can show that the transaction amount is positive without disclosing the precise amount. This improves confidentiality and privacy.
+        A logarithmic-sized evidence that can be quickly validated by the verifier is how bulletproofs operate. Polynomial commitments and a combination of inner product and inner product argument approaches are used to build the evidence. Comparing Bulletproofs to conventional Zero-Knowledge proofs, the size of the proof is drastically reduced, which is their main advantage. Blockchain systems can provide effective and compact range proofs by utilising Bulletproofs, which enhances scalability by lowering the computational and storage needs.
+        To improve privacy, streamline transaction verification, and guarantee the secrecy of sensitive data, bulletproofs have been included in a number of blockchain projects, including privacy-focused cryptocurrencies like Monero.
+
+      </p>
+
+      
+    <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+
+    <section>
+      <h2 id="conclusion" class="text-3xl font-Inter font-semibold my-4">
+        Conclusion
+      </h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-16 font-Inter">
+        In conclusion, Zero-Knowledge proofs are cryptographic protocols that enable one party to prove to another party that they are aware of a fact without actually disclosing the truth itself. In several fields, including blockchain technology, they offer anonymity, security, and effective verification. With the use of methods like zk-SNARKs, which offer concise, non-interactive justifications of knowledge, computations can be validated without revealing intermediate results. With the capacity to demonstrate set membership without revealing a single element, zero-knowledge set membership (ZKSM) proofs guarantee the privacy of inputs and transactions. On the other hand, bulletproofs enable effective range proofs by producing concise and verifiable proofs without revealing the precise numbers. These methods improve the trustworthiness, scalability, and privacy of blockchain networks. We can create safe and private transactions, enhance scalability, and guarantee the integrity of sensitive information by utilising Zero-Knowledge proofs in blockchain.
+
+      </p>
+    </section>
+      `,
+    date: "February 5, 2025",
+    imageUrl: "https://img.freepik.com/free-vector/code-review-concept-illustration_114360-4104.jpg?ga=GA1.1.2064688740.1737635075&semt=ais_hybrid",
+
+    headings: [
+      { id: "introduction", title: "Introduction" },
+      { id: "zk-snarks", title: "Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARKs)" },
+      { id: "zksm-proofs", title: "Zero-Knowledge Set Membership (ZKSM) Proofs" },
+      { id: "bulletproofs", title: "Bulletproofs" },
+      { id: "conclusion", title: "Conclusion" }
+    ],
+
+
+
+  },
+
+
+
+  {
+    id: 5,
+    author: "Gaurav Tiwari",
+    avatar : "https://avatars.githubusercontent.com/u/45980323?v=4",
+    title: "How Does ORC-20 Prevent Double-Spending?",
+    description: "The ORC-20 Token Standard may be a convention utilized in blockchain innovation to form and oversee tokens. It is comparable to other token benchmarks such as ERC-20 and BEP-20 but has its own interesting highlights.",
+    template: `
+      <h2 id="introduction" class="text-3xl font-Inter font-semibold my-4 mt-16">Introduction</h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        The ORC-20 Token Standard may be a convention utilized in blockchain innovation to form and oversee tokens. 
+        It is comparable to other token benchmarks such as ERC-20 and BEP-20 but has its own interesting highlights. 
+        ORC-20 gives a set of rules that designers should follow when making tokens on the blockchain. 
+        These tokens can speak to different resources, advanced resources, or even virtual monetary forms. 
+        The standard guarantees that all ORC-20-compliant tokens are interoperable, meaning they can be effectively traded and utilized across distinct stages and wallets. 
+        ORC-20 tokens are fueled by smart contracts, which empower computerized and secure exchanges on the blockchain. 
+        This standard has gained notoriety due to its flexibility and ease of execution for different decentralized applications (DApps) and token-based ventures.
+      </p>
+
+      <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+      <h2 id="double-spending" class="text-3xl font-Inter font-semibold my-4">Understanding Double-Spending in Blockchain</h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        Double-spending may be a basic issue in blockchain and conventional installment frameworks that happens when the same advanced cash or resource is used more than once, leading to fraudulent exchanges and the misfortune of believing. Within the context of blockchain, double-spending happens when a client tries to utilize the same computerized token for different exchanges, misusing the decentralized nature of the organization.
+        Since conventional installment frameworks depend on centralized specialists for exchange approval, they are helpless to double-spending assaults, where pernicious performers can manufacture exchanges and spend the same stories over and over. This defenselessness undermines the keenness of the framework, making it basic for both blockchain and conventional installment frameworks to actualize strong instruments to avoid double-spending and guarantee the security and unwavering quality of computerized exchanges.
+
+      </p>
+
+      <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+      <h2 id="orc20-features" class="text-3xl font-Inter font-semibold my-4">
+        ORC-20 Token Standard: Key Features
+      </h2>
+
+      <ul class="list-disc pl-6 text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter marker:text-black">
+        <li> Smart Contracts </li>
+        <li> Immutable Ledger</li>
+        <li> Token Ownership and Balance Tracking</li>
+        <li> Transaction Verification and Consensus Mechanism</li>
+        <li> Interoperability</li>
+        <li> Security</li>
+        <li> Decentralization</li>
+        <li> Transferability</li>
+        <li> Standardization</li>
+        <li> Compliance</li>
+    
+        
+      </ul>
+
+
+      <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+      <h2 id="preventing-double-spending" class="text-3xl font-Inter font-semibold my-4">
+        Preventing Double-Spending with ORC-20
+      </h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        ORC-20 guarantees double-spending avoidance through its strong token exchange component, shrewd contracts, and decentralized agreement. When clients exchange ORC-20 tokens, quick validations guarantee adequate token adjustment some time after executing the exchange, disposing of the hazard of copying tokens. Savvy contracts administer exchanges, implementing predefined rules to foil double-spending endeavors. The decentralized agreement within the ORC-20 arrangement includes conveyed hubs making consistent choices, guaranteeing exchange legitimacy. Together, these highlights create a trustless environment, guaranteeing the uniqueness and security of each ORC-20 token and making it strong against false token replication.
+      </p>
+
+      <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+      <h2 id="token-transfer" class="text-3xl font-Inter font-semibold my-4">
+        Token Transfer Mechanism
+      </h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        The ORC-20 token standard consolidates a vigorous token exchange component to avoid double-spending inside the blockchain organization. When a client starts an exchange to exchange ORC-20 tokens, the convention performs quick validations to guarantee that the sender has adequate tokens for the exchange. Once confirmed, the tokens are subtracted from the sender's account and included in the recipient's account in a single nuclear operation, anticipating the plausibility of copying the same tokens for numerous exchanges. This consistent and secure token exchange instrument guarantees that each ORC-20 token is extraordinarily accounted for, killing the hazard of false or unauthorized token replication.
+
+      </p>
+      
+      <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+      <h2 id="role-smart-contracts" class="text-3xl font-Inter font-semibold my-4">
+        Role of Smart Contracts
+      </h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        ORC-20 tokens depend on shrewd contracts to oversee and execute exchanges. These self-executing contracts uphold the rules of token exchanges, permitting computerized approval and confirmation of exchanges. Keen contracts act as advanced understandings between parties and encourage token exchanges, as it were, when particular conditions are met. By implementing foreordained rules inside the shrewd contract, double-spending endeavors are upset. As a result, ORC-20-savvy contracts ensure the judgment and exactness of token exchanges, keeping up the shortage and uniqueness of each token inside the network.
+      </p>
+      
+    <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+    <h2 id="decentralized-consensus" class="text-3xl font-Inter font-semibold my-4">
+        Decentralized Consensus and Confirmation
+      </h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter">
+        The ORC-20 standard works inside a decentralized organization where agreement is accomplished through a disseminated understanding component. When a token exchange happens, the decentralized hubs within the organization work collaboratively to affirm the transaction's legitimacy. The agreement guarantees that different hubs reach a consistent choice, preventing any noxious on-screen characters from controlling the framework for double-spending. The affirmation of each exchange by the arranger includes an extra layer of security, guaranteeing that each token exchange is verifiable and unalterable. This decentralized agreement instrument serves as a trustless protection against double-spending, making ORC-20 tokens dependable and flexible in blockchain situations.
+
+      </p>
+      
+    <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+
+    <h2 id="orc20-vs-other-standards" class="text-3xl font-Inter font-semibold my-4">
+        ORC-20 vs. Other Token Standards 
+      </h2>
+      <ul class="list-disc pl-6 text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-4 font-Inter marker:text-black">
+        <li> ORC-20 may be a one-of-a kind token standard within the blockchain biological system, and comparing it with other token measures sheds light on its recognizing highlights. Not at all like ERC-20, which is broadly utilized for Ethereum-based tokens, and BEP-20, commonly utilized on Binance Keen Chain, ORC-20 offers particular advantages.</li>
+        <li> One of the essential contrasts is the fundamental blockchain organization. Whereas ERC-20 works on Ethereum, ORC-20 is outlined for a diverse blockchain organization. This distinction can affect variables such as exchange speed, fetch rate, and scalability.</li>
+        <li> Additionally, ORC-20 may consolidate particular highlights custom-fit to the prerequisites of the blockchain it works on, empowering more noteworthy adaptability in token usefulness and governance.</li>
+        <li> Another pivotal viewpoint is the agreement component. ORC-20 tokens may utilize diverse agreement calculations, influencing the security and certainty of transactions.</li>
+        <li> Furthermore, ORC-20 may address particular challenges confronted by other token guidelines, giving imaginative arrangements for issues like double-spending, interoperability, and keen contract functionality.</li>
+        <li> Ultimately, the choice between ORC-20 and other token benchmarks depends on the project's particular needs and the preferences each standard offers within the setting of the chosen blockchain organization.</li>
+        
+        
+      </ul>
+      
+      
+    <hr class="border border-t-[1px] border-[#e5e7eb] my-8" />
+
+
+    <section>
+      <h2 id="conclusion" class="text-3xl font-Inter font-semibold my-4">
+        Conclusion
+      </h2>
+      <p class="text-[#5f5e5e] text-[15.25px] my-5 leading-7 mb-16 font-Inter">
+        This article clarifies how the ORC-20 Token Standard anticipates double-spending in blockchain innovation. It examines the key highlights of ORC-20 and its role in guaranteeing the uniqueness and security of token exchanges. The article highlights the significance of shrewd contracts and decentralized agreements in upsetting double-spending endeavors. Moreover, it compares ORC-20 with other token guidelines, emphasizing its special characteristics. By actualizing strong token trade instruments and utilizing shrewd contracts, ORC-20 offers a trustless environment for secure and solid advanced exchanges, making it a favored choice for different decentralized applications and token-based ventures.
+
+      </p>
+    </section>
+      `,
+    date: "February 5, 2025",
+    imageUrl: "https://img.freepik.com/free-vector/transfer-money-concept-illustration_114360-3064.jpg?ga=GA1.1.2064688740.1737635075&semt=ais_hybrid",
+
+    headings: [
+      { id: "introduction", title: "Introduction" },
+      { id: "double-spending", title: "Understanding Double-Spending in Blockchain" },
+      { id: "orc20-features", title: "Key Features of ORC-20" },
+      { id: "preventing-double-spending", title: "Preventing Double-Spending with ORC-20" },
+      { id: "token-transfer", title: "Secure Token Transfer Mechanism" },
+      { id: "role-smart-contracts", title: "Role of Smart Contracts" },
+      { id: "decentralized-consensus", title: "Decentralized Consensus and Transaction Confirmation" },
+      { id: "orc20-vs-other-standards", title: "ORC-20 vs. Other Token Standards" },
+      { id: "conclusion", title: "Conclusion" }
+    ],
+
+
+
+  },
+
 
 
 
