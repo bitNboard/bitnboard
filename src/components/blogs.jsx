@@ -3,7 +3,7 @@ import blogList from "./blogs-list";
 
 const Blogs = () => {
   return (
-    <div className="py-16 px-4 font-primary flex flex-col w-4/5 mt-12">
+    <div className="py-16 px-4 font-primary flex flex-col sm:w-full lg:w-4/5 mt-12">
       <h1 className="text-2xl font-bold w-1/4">All Blogs</h1>
       <p className="text-base mt-2">
         Want to dive in deeper into a specific category? Click on a topic below.
