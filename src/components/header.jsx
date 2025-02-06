@@ -56,7 +56,7 @@ const Header = () => {
         ></span>
       </Link>
 
-      <Link
+      {/* <Link
         to="/swags"
         className={`block sm:inline-block relative px-2 py-2 sm:py-0 text-lg font-medium sm:mx-4 group ${
           location.pathname === '/swags' ? 'text-black' : 'text-gray-600'
@@ -82,7 +82,7 @@ const Header = () => {
             location.pathname === '/contact-us' ? 'w-full' : 'w-0 group-hover:w-full'
           }`}
         ></span>
-      </Link>
+      </Link> */}
     </div>
       </nav>
     </header>
