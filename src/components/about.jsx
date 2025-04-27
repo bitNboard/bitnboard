@@ -3,13 +3,29 @@ import { FaGithub } from "react-icons/fa";
 import { TbBrandX } from "react-icons/tb";
 
 const teamList = [
-  
+  {
+    name: "Chirag Garg",
+    role: "Co-Founder",
+    subRole: "Blockchain Developer",
+    avatar: "https://avatars.githubusercontent.com/u/38765776?v=4",
+    twitterHandle: "@DeVil2O",
+    githubLink: "https://github.com/DeVil2O/",
+    twitterLink: "https://twitter.com/ChiragG60642348",
+  },
+  {
+    name: "Gaurav Tiwari",
+    role: "Co-Founder",
+    avatar: "https://avatars.githubusercontent.com/u/45980323?v=4",
+    twitterHandle: "@krsihndaas",
+    githubLink: "https://github.com/Gauravtwr",
+    twitterLink: "https://x.com/Gaurav_Tiwari07",
+  },
 ];
 
 const About = () => {
   return (
     <div className="h-full min-h-screen flex flex-col items-center bg-white bg-grid font-primary justify-between">
-      <div className="text-[3.5rem] w-full flex justify-center text-center mt-7">
+      <div className="text-[2.5rem] w-full flex justify-center text-center mt-7">
         <div className="w-4/5 text-center">
           <div className="font-bold">We are Web3, AI, and robotics experts, contributing to top
             open-source projects that power decentralized networks and
@@ -19,9 +35,10 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="w-3/5 mt-10 mb-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="w-3/5 mt-10 mb-24 grid grid-cols-1 sm:grid-cols-2 gap-8">
         {teamList.map((member, index) => (
-          <div
+          <div className="w-full flex justify-center">
+            <div
             key={index}
             className="relative flex flex-col my-6 bg-white border border-slate-200 w-72 p-6"
           >
@@ -65,6 +82,7 @@ const About = () => {
                 <TbBrandX size={22} />
               </a>
             </div>
+          </div>
           </div>
         ))}
       </div>

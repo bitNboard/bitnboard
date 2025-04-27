@@ -68,7 +68,7 @@ const Header = () => {
             location.pathname === '/swags' ? 'w-full' : 'w-0 group-hover:w-full'
           }`}
         ></span>
-      </Link>
+      </Link> */}
 
       <Link
         to="/contact-us"
@@ -82,7 +82,7 @@ const Header = () => {
             location.pathname === '/contact-us' ? 'w-full' : 'w-0 group-hover:w-full'
           }`}
         ></span>
-      </Link> */}
+      </Link>
     </div>
       </nav>
     </header>
