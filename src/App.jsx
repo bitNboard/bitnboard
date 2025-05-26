@@ -10,11 +10,15 @@ import Blog from './components/blog';
 import Gallery from './components/gallery';
 import NotFound from './components/not-found';
 import Swags from './components/swags';
+import CreatePost from './components/create-post';
+import PriceMarquee from './components/PriceMarquee';
+import Projects from './components/projects';
 
 function App() {
   return (
     <Router>
-      <div className="flex flex-col h-full min-h-screen">
+      <div className="flex flex-col h-full overflow-y-auto">
+      <PriceMarquee />
         <Header />
         <main className="flex-grow">
           <Routes>
@@ -24,6 +28,8 @@ function App() {
             <Route path="/blogs/:id" element={<Blog />} />
             <Route path="/contact-us" element={<GetInTouch />} />
             <Route path="/swags" element={<Swags />} />
+            <Route path="/create-post" element={<CreatePost />} />
+            <Route path="/projects" element={<Projects />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

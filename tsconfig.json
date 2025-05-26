@@ -1,0 +1,10 @@
+// tsconfig.json
+{
+    "compilerOptions": {
+      "baseUrl": ".",                // Required
+      "paths": {
+        "@/*": ["src/*"]             // ✅ Alias `@` to your `src` folder
+      }
+    }
+  }
+  

@@ -1,4 +1,4 @@
-const blogList = [
+const blogLists = [
   {
     id: 1,
     author: "Chirag Garg",
@@ -864,4 +864,4 @@ Distributed redundancy is used to ensure data availability even in the event of 
   
 ];
 
-export default blogList;
+export default blogLists;

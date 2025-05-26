@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Blogs from "./blogs";
+import PriceMarquee from "./PriceMarquee";
 
 const Home = () => {
   const phrases = ["The Web3.0", "AI Systems", "Smart Robotics"];
@@ -66,6 +67,8 @@ const Home = () => {
 
   return (
     <div className="h-full min-h-screen flex flex-col items-center bg-white bg-grid px-4 sm:px-10">
+   
+
     <div className="font-primary w-full flex justify-center text-center mt-7">
       <div className="w-full sm:w-4/5">
         <div className="font-bold text-[2rem] sm:text-[2.5rem] lg:text-[3.5rem] leading-snug">
